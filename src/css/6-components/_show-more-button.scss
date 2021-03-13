@@ -1,0 +1,6 @@
+.show-more-target,
+.show-more-button {
+    &[aria-hidden='true'] {
+        display: none;
+    }
+}

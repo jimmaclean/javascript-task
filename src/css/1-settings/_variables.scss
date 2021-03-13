@@ -1,0 +1,101 @@
+/**
+ * Colors
+ */
+$white: #ffffff;
+/* ... */
+$grey-7: #333333;
+
+
+/**
+ * Space
+ */
+$space-tiny: 4px;
+$space-1: 8px;
+$space-2: 12px;
+$space-3: 16px;
+$space-4: 20px;
+$space-5: 24px;
+$space-6: 32px;
+$space-7: 40px;
+$space-8: 48px;
+$space-9: 56px;
+$space-10: 64px;
+$space-11: 72px;
+$space-12: 96px;
+
+$space: (
+    tiny: $space-tiny,
+    1: $space-1,
+    2: $space-2,
+    3: $space-3,
+    4: $space-4,
+    5: $space-5,
+    6: $space-6,
+    7: $space-7,
+    8: $space-8,
+    9: $space-9,
+    10: $space-10,
+    11: $space-11,
+    12: $space-12,
+);
+
+
+/**
+* Shadows
+*/
+$shadow-1: 0 1px 4px 0 rgba($grey-7, 0.07);
+$shadow-2: 0 2px 4px 0 rgba($grey-7, 0.15);
+$shadow-3: 0 3px 8px 0 rgba($grey-7, 0.35);
+
+
+/**
+ * Radius
+ */
+$radius-1: 3px;
+$radius-2: 4px;
+$radius-3: 7px;
+$radius-4: 14px;
+
+
+/**
+ * Breakpoints
+ */
+$breakpoints: (
+    sm: 0px,
+    md: 640px,
+    lg: 1024px,
+    xl: 1200px,
+    xxl: 1440px
+);
+
+/**
+ * Typography
+ */
+$display-font: Helvetica, Arial, sans-serif;
+$body-font: Helvetica, Arial, sans-serif;
+
+$sm-lh: 26px;
+$md-lh: 28px;
+/* prettier-ignore */
+$typography-map: (
+  sm: (
+    h1:    (fs: 40px, lh: $sm-lh*2,   mt: 0,          mb: $sm-lh*2,  ),
+    h2:    (fs: 32px, lh: $sm-lh*1.5, mt: $sm-lh*3,   mb: $sm-lh*1.5,),
+    h3:    (fs: 28px, lh: $sm-lh*1.5, mt: $sm-lh*3,   mb: $sm-lh*1.5,),
+    h4:    (fs: 24px, lh: $sm-lh*1.5, mt: $sm-lh*3,   mb: $sm-lh*1.5,),
+    h5:    (fs: 18px, lh: $sm-lh,     mt: $sm-lh,     mb: $sm-lh,    ),
+    h6:    (fs: 16px, lh: $sm-lh,     mt: $sm-lh,     mb: $sm-lh,    ),
+    p:     (fs: 16px, lh: $sm-lh,     mt: $sm-lh,     mb: $sm-lh,    ),
+    small: (fs: 13px, lh: 20px,       mt: 20px,       mb: 20px,      ),
+  ),
+  md: (
+    h1:    (fs: 48px, lh: $md-lh*2,   mt: 0,          mb: $md-lh*2,  ),
+    h2:    (fs: 38px, lh: $md-lh*1.5, mt: $md-lh*3,   mb: $md-lh*1.5,),
+    h3:    (fs: 32px, lh: $md-lh*1.5, mt: $md-lh*3,   mb: $md-lh*1.5,),
+    h4:    (fs: 26px, lh: $md-lh*1.5, mt: $md-lh*3,   mb: $md-lh*1.5,),
+    h5:    (fs: 22px, lh: $md-lh,     mt: $md-lh,     mb: $md-lh,    ),
+    h6:    (fs: 18px, lh: $md-lh,     mt: $md-lh,     mb: $md-lh,    ),
+    p:     (fs: 18px, lh: $md-lh,     mt: $md-lh,     mb: $md-lh,    ),
+    small: (fs: 15px, lh: 22px,       mt: 22px,       mb: 22px,      ),
+  )
+);

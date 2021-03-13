@@ -1,0 +1,19 @@
+body {
+    font-family: $body-font;
+}
+
+@each $breakpoint-key, $breakpoint-val in $typography-map {
+   @include breakpointWrap($breakpoint-key) {
+       @each $type-key, $type-val in $breakpoint-val {
+           #{$type-key},
+           .#{$type-key} {
+               font-size: map-get($type-val, fs);
+               line-height: map-get($type-val, lh);
+            //    font-family: map-get($type-val, fontFamily);
+            //    font-weight: map-get($type-val, fontWeight);
+               text-transform: none;
+               color: inherit;
+           }
+       }
+   }
+}

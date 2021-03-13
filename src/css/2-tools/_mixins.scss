@@ -1,0 +1,29 @@
+@mixin breakpointWrap($screenSize) {
+  @if map-has-key($breakpoints, $screenSize) {
+    $minWidth: map-get($breakpoints, $screenSize);
+    @if $minWidth == 0 {
+      @content;
+    } @else {
+      @media screen and (min-width: $minWidth) {
+        @content;
+      }
+    }
+  } @else {
+    @media screen and (min-width: $screenSize) {
+      @content;
+    }
+  }
+}
+
+@mixin style-like($element) {
+  @each $breakpoint-key, $breakpoint-val in $typography {
+    @include breakpointWrap($breakpoint-key) {
+      $type-val: map-get($breakpoint-val, $element);
+
+      font-size: map-get($type-val, fontSize);
+      line-height: map-get($type-val, lineHeight);
+      font-family: map-get($type-val, fontFamily);
+      font-weight: map-get($type-val, fontWeight);
+    }
+  }
+}

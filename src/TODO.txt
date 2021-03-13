@@ -1,0 +1,9 @@
+TODO:
+
+- API link interface for data
+   - getList of journeys [DONE]
+   - get detail for a journey 
+
+- render list of journeys [DONE]
+- render detail for one journey
+
